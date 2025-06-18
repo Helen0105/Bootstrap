@@ -3,82 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Натуральні засоби для волосся</title>
+    <title>Магазин кави</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+ <style>
+        .card-img-top {
+            height: 200px; /* Задайте фіксовану висоту для всіх зображень */
+            object-fit: cover; /* Обрізає зображення, щоб вони займали всю площу */
+        }
+        .card {
+            transition: transform 0.3s ease-in-out; /* Додаємо анімацію при наведенні */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Збільшуємо картку при наведенні */
+        }
+    </style>
+  </head>
 <body>
 
   <!-- Навігація -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Логотип">
-      Натуральне волосся
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Головна</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Про нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакти</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Головний банер -->
-  <div class="container-fluid bg-light">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="img/banner.jpg" class="img-fluid" alt="Банер з продукцією">
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <div>
-          <h1>Природна сила для краси вашого волосся</h1>
-          <p>Відкрийте для себе органічні та натуральні засоби, які зроблять ваше волосся здоровим і сяючим.</p>
-          <a href="#" class="btn btn-primary">Перейти до каталогу</a>
+
+<header class="bg-white shadow-sm py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo-coffee.png" alt="Coffee Shop Logo" height="50">
+                    <span>Coffee Shop</span>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Знайти</button>
+                </form>
+            </div>
+            <div class="col-md-3 text-end">
+                <a href="#" class="btn btn-link me-2">
+                    <i class="bi bi-person"></i> Обліковий запис
+                </a>
+                <a href="#" class="btn btn-outline-secondary">
+                    <i class="bi bi-cart"></i> Кошик (0)
+                </a>
+            </div>
         </div>
-      </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Кава в зернах</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Мелена кава</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Аксесуари</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
     </div>
-  </div>
+</header>
 
-  <!-- Популярні товари -->
-  <div class="container mt-5">
-    <h2>Популярні товари</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/product1.jpg" class="card-img-top" alt="Шампунь">
-          <div class="card-body">
-            <h5 class="card-title">Натуральний шампунь</h5>
-            <p class="card-text">Опис шампуню з корисними властивостями.</p>
-            <a href="#" class="btn btn-secondary">Детальніше</a>
-          </div>
+
+
+<main>
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Про Coffee Shop</h2>
+                <p class="lead">Ми - команда ентузіастів, які пристрасно закохані в каву. Наша мета - поділитися з вами найкращими сортами кави з усього світу, обсмаженими з любов'ю та майстерністю.</p>
+                <p>Ми ретельно відбираємо зерна у перевірених фермерів, які дотримуються принципів сталого розвитку та справедливої торгівлі. Наша обсмажувальна машина дозволяє нам точно контролювати процес обсмаження, щоб розкрити унікальний смак кожного сорту.</p>
+                <p>В Coffee Shop ви знайдете широкий вибір кави в зернах, меленої кави та капсул для кавомашин. Ми також пропонуємо різноманітні аксесуари для приготування кави, щоб ви могли насолоджуватися ідеальною чашкою у себе вдома.</p>
+                <a href="#" class="btn btn-primary">Дізнатися більше</a>
+            </div>
+            <div class="col-md-6">
+                <div id="about-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/interior.jpg" class="d-block w-100" alt="Інтер'єр кав'ярні">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/frying.webp" class="d-block w-100" alt="Процес обсмаження кави">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/coffee-beans.webp" class="d-block w-100" alt="Кавові зерна">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Попередня</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Наступна</span>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Додати інші картки товарів -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h3>Наша історія</h3>
+                <p>Coffee Shop був заснований у 2020 році групою друзів, об'єднаних любов'ю до кави. Ми починали з невеликої кав'ярні в центрі міста, а зараз розширилися до онлайн-магазину, щоб мати можливість ділитися нашою кавою з усім світом. Ми пишаємося тим, що робимо, і сподіваємося, що ви полюбите нашу каву так само, як любимо її ми!</p>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
 
-  <!-- Підвал -->
-  <footer class="bg-light text-center py-3 mt-5">
-    © 2024 Натуральне волосся
-  </footer>
 
+
+  <section id="coffee-types" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Насолоджуйтесь різноманіттям кави</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cartenoire.png" class="card-img-top" alt="Carte Noire">
+                        <div class="card-body">
+                            <h5 class="card-title">Carte Noire</h5>
+                            <p class="card-text">Вишукана кава з глибоким ароматом та насиченим смаком, створена для справжніх гурманів.</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Преміум якість</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/nescaregold.jpg" class="card-img-top" alt="Nescare GOLD">
+                        <div class="card-body">
+                            <h5 class="card-title">Nescafe GOLD</h5>
+                            <p class="card-text">Розчинна кава з багатим ароматом та м'яким смаком, ідеальна для швидкого приготування.</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Швидко та зручно</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                        <img src="./img/jacobmonarch.webp" class="card-img-top" alt="Jacobs Monarch">
+                        <div class="card-body">
+                            <h5 class="card-title">Jacobs Monarch</h5>
+                            <p class="card-text">Класична розчинна кава з насиченим ароматом та збалансованим смаком, популярна в усьому світі.</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Класика на кожен день</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/egoistecafe.jpg" class="card-img-top" alt="Egoiste Cafe">
+                        <div class="card-body">
+                            <h5 class="card-title">Egoiste Cafe</h5>
+                            <p class="card-text">Кава преміум-класу з унікальним смаком та ароматом, створена для особливих моментів.</p>
+                            <a href="#" class="btn btn-primary">Детальніше</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Для особливих моментів</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Що говорять наші клієнти</h2>
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="d-flex align-items-center">
+                                <img src="шлях/до/фотографії/клієнта1.jpg" class="rounded-circle me-3" alt="Фото клієнта 1" width="80" height="80">
+                                <div>
+                                    <p class="mb-0"><strong>Іван Петренко</strong></p>
+                                    <small class="text-muted">Київ</small>
+                                </div>
+                            </div>
+                            <blockquote class="blockquote mt-3">
+                                <p>"Чудова кава! Замовляю тут вже кілька років і завжди задоволений якістю та обслуговуванням. Особливо люблю їхню арабіку з Ефіопії - має неповторний смак!"</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="d-flex align-items-center">
+                                <img src="шлях/до/фотографії/клієнта2.jpg" class="rounded-circle me-3" alt="Фото клієнта 2" width="80" height="80">
+                                <div>
+                                    <p class="mb-0"><strong>Марія Сидоренко</strong></p>
+                                    <small class="text-muted">Львів</small>
+                                </div>
+                            </div>
+                            <blockquote class="blockquote mt-3">
+                                <p>"Дуже швидка доставка! Замовила каву вчора ввечері, а сьогодні вранці вже насолоджуюся ароматною чашкою. Дякую за чудовий сервіс!"</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="d-flex align-items-center">
+                                <img src="шлях/до/фотографії/клієнта3.jpg" class="rounded-circle me-3" alt="Фото клієнта 3" width="80" height="80">
+                                <div>
+                                    <p class="mb-0"><strong>Олексій Коваленко</strong></p>
+                                    <small class="text-muted">Харків</small>
+                                </div>
+                            </div>
+                            <blockquote class="blockquote mt-3">
+                                <p>"Відмінний вибір кави на будь-який смак! Я люблю експериментувати з різними сортами, і в Coffee Shop завжди знаходжу щось нове та цікаве для себе."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Попередня</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Наступна</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
